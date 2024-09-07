@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lancelot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lancelot&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* HEADER - LOGO STARTS HERE */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#circle_logo{
+    margin-top: 0.3em;
+    background-color: #000;
+    border-radius: 100rem;
+    width: 120px;
+    height: 120px;
+}
+
+#circle_a{
+    font-family: "Cinzel Decorative", serif;
+    font-size: 5em;
+    color: #fff;
+    position: relative;
+    left: 10px;
+    top: 8px;
+}
+
+#circle_b{
+    font-family: "Cinzel Decorative", serif;
+    font-size: 4em;
+    color: #fff;
+    position: relative;
+    right: -70px;
+    top: -75px
+}
+
+/* #logo_slogan{
+    font-family: "Lancelot", serif;
+    font-weight: bold;
+    font-size: 0.4em;
+    letter-spacing: 0.2em;
+    /* margin-left: 0.5em;
+    margin-bottom: 13rem; 
+} */
+
+/* HEADER - LOGO STARTS ENDS */
+
+/* NAV AND MENU STARTS HERE */
+
+nav{
+    
+    position: sticky;
+    /* border: 1px solid #e7e7e7;
+    background-color: #f3f3f3; */
+}
+
+nav ul{
+    list-style: none;
+    background-color: #f3f3f3;
+}
+
+nav ul li{
+    /* display: inline; */
+    float: left;
+    
+}
+
+nav ul li a{
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #070707;
+}
+
+nav .search_container{
+    background-color: #000;
+    position: relative;
+    float: right;
+    right: 3px;
+}
+
+nav #search_bar{
+    position: relative;
+    top: -5px;
+    padding: 0.7em;
+    border: none;
+}
+
+/* NAV AND MENU ENDS HERE */
