@@ -75,11 +75,13 @@ nav ul{
 nav ul li{
     /* display: inline; */
     float: left;
+    margin-top: 10px;
     
 }
 
 nav ul li a{
     color: white;
+    font-size: 2em;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -100,4 +102,21 @@ nav #search_bar{
     border: none;
 }
 
+nav .tooggleBtn svg{
+    display: none;
+}
+
 /* NAV AND MENU ENDS HERE */
+
+@media screen and (max-width: 600px){
+    .toggleBtn {
+        background-color:black;
+    }
+
+    .menu{
+        display: block;
+    }
+    .close{
+        display: block;
+    }
+}
