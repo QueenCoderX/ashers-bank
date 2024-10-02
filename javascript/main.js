@@ -37,7 +37,8 @@ navItems.forEach (
     }
 )
 
-//main script//
+//MAIN SCRIPTS//
+
 var swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   slidesPerView: 'auto',
@@ -57,6 +58,23 @@ var swiper = new Swiper('.swiper-container', {
     },
   }
 });
+
+//FOOTER SCRIPTS//
+function toggleAccordion(element) {
+  const content = element.nextElementSibling;
+  const arrowUp = element.querySelector('.arrowUp');
+  const arrowDown = element.querySelector('.arrowDown');
+  if (content.style.display === "block") {
+      content.style.display = "none";
+      arrowUp.style.display = "none";
+      arrowDown.style.display = "block";
+  } else {
+      content.style.display = "block";
+      arrowDown.style.display = "none";
+      arrowUp.style.display = "block";
+  }
+}
+
 
 
 
