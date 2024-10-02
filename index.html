@@ -10,45 +10,301 @@
     <meta property="og:locale" content="en_US">
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="css/style.css">
     <title>Ashers Bank</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
-<body>  
-    
-    <header>
-        <div id="circle_logo">
-            <h1 id="circle_a">A</h1>
-            <h1 id="circle_b">B</h1>
-         </div>
-        <!-- <div>
-            <p id="logo_slogan">Banking, Simplified!</p>
-        </div> -->
+<body>
+    <header class="header">
+        <div class="headerContent logo">
+            <h1 id="circle_a" class="logo-letter">A</h1>
+            <h1 id="circle_b" class="logo-letter">B</h1>
+    </div>
+        <div style="z-index: 100;" class="headerContent serach">
+            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="36px" fill="#000000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+        <p class="search" style="font-family:'Glacial Indifference', 'Times New Roman', Times, serif; font-weight: bold; font-size:0.8em;  align-self: center;">Search</p>
+        </div>
+        <a style="color: #000; text-decoration: none; z-index: 100; display: flex; flex-direction: column; justify-content: center;" class="headerContent lock" href="login.html">
+            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#000000"><path d="M226.67-80q-27.5 0-47.09-19.58Q160-119.17 160-146.67v-422.66q0-27.5 19.58-47.09Q199.17-636 226.67-636h60v-90.67q0-80.23 56.57-136.78T480.07-920q80.26 0 136.76 56.55 56.5 56.55 56.5 136.78V-636h60q27.5 0 47.09 19.58Q800-596.83 800-569.33v422.66q0 27.5-19.58 47.09Q760.83-80 733.33-80H226.67Zm0-66.67h506.66v-422.66H226.67v422.66ZM480.11-280q32.22 0 55.06-22.52Q558-325.04 558-356.67q0-31-22.95-55.16Q512.11-436 479.89-436t-55.06 24.17Q402-387.67 402-356.33q0 31.33 22.95 53.83 22.94 22.5 55.16 22.5ZM353.33-636h253.34v-90.67q0-52.77-36.92-89.72-36.93-36.94-89.67-36.94-52.75 0-89.75 36.94-37 36.95-37 89.72V-636ZM226.67-146.67v-422.66 422.66Z"/></svg>
+            <p class="lock" style="font-family:'Glacial Indifference', 'Times New Roman', Times, serif; font-weight:bold; font-size:0.8em;  align-self: center;">Login</p>
+        </a>
+        <div class="headerContent toggleBtn">
+            <svg class="menuIcon" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+            <svg class="closeIcon" xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            <p class="menu" style="font-family:'Glacial Indifference', 'Times New Roman', Times, serif; font-weight:bold; font-size:0.8em;  align-self: center;">Menu</p>
+        </div>
     </header>
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#register">Register</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="navLinks">
+            <li><a class="navItems" href="#home">Home</a></li>
+            <li><a class="navItems" href="blog.html">Blog</a></li>
+            <li><a class="navItems" href="about.html">About Us</a></li>
+            <li><a class="navItems" href="register.html">Register</a></li>
+            <li><a class="navItems" href="faq.html">Faq</a></li>
         </ul>
-        <div class="search_container">
-            <input id="search_bar" type="text" placeholder="Search. . .">
-                <svg id="search" style="position:relative; top: 5px" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
-
-                <svg id="dashboard" style="position:relative; top: 5px" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M520-600v-240h320v240H520ZM120-440v-400h320v400H120Zm400 320v-400h320v400H520Zm-400 0v-240h320v240H120Zm80-400h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"/></svg>
-        </div>
-        <div class="toggleBtn">
-            <svg class="menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" onclick="toggleBtnOn()"/></svg>
-
-            <svg class="close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" onclick="toggleBtnOff()"/></svg>
-        </div>
     </nav>
-    <main>
+    <main class="main">
+        <section class="businessOrPersonal">
+            <div><a class="business" href="">Business</a></div>
+            <div><a class="personal" href="">Personal</a></div>
+        </section>
+        <section class="hero">
+            <div class="geoStatus">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="m363-310 117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133ZM480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-112 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Zm0-340Z"/></svg>
+                <h5 style="margin-left: 0.5em; font-weight: 700; font-family: 'Glacial Indifference', 'Times New Roman', Times, serif;align-self: center; color: #000;">2024 Leading Microfinance Banking Platform</h5>
+            </div>
+            <div class="heroCTA">
+                <h2>Banking Potenial, <span style="font-weight: 900;">Unlocked!</span> — with Asher's Bank</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam expedita corporis ipsa nisi blanditiis perferendis veritatis voluptate asperiores esse ex similique, dicta quia eligendi repellat nihil maxime numquam voluptas totam.</p>
+                <button>Create Your Account</button>
+            </div>
+        </section>
 
+        <section class="cardContainer"> 
+            <div class="textContainer"> 
+            <h3>Businesses <span style="color: #cdac49;">That Rep </span> Under The Weather</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sapiente dignissimos fugiat illo iusto, itaque illum tempora doloribus eligendi repellat autem iure, quos, cumque quis facilis soluta. Quibusdam, minus commodi.</p>
+        </div>
+        <div class="slider">
+            <div class="slide-track" >
+                <div class="slide">
+                    <img src="css/imgs/KFC.PNG" alt=""  height="50" width="100">
+                </div>
+                <div class="slide">
+                    <img src="css/imgs/PEPSI.WEBP" alt="" height="50" width="100">
+                </div>
+                <div class="slide">
+                    <img src="css/imgs/The Place.png" alt=""  height="50" width="100">
+                </div>
+                <div class="slide">
+                    <img src="css/imgs/glovo logo.png" alt=""  height="50" width="100">
+                </div>
+                <div class="slide">
+                    <img src="css/imgs/Slot Logo.png" alt=""  height="50" width="100">
+                </div>
+                <div class="slide">
+                    <img src="css/imgs/COCA.JPG" alt=""  height="50" width="100">
+                </div>
+            </div>
+        </div>
+          </section>
+
+          <section class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="css/imgs/IMG_4516.JPG" alt="" width="100px" height="100px">
+                <div class="swiper-slideText">
+                    <h2>Hashing Financial Freedom</h2>
+                    <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="css/imgs/IMG_4517.JPG" alt="" width="100px" height="100px">
+                <div class="swiper-slideText">
+                    <h2>Hashing Financial Freedom</h2>
+                    <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</div>
+            </div>
+
+            <div class="swiper-slide">
+                <img src="css/imgs/IMG_4517.JPG" alt="" width="100px" height="100px">
+                <div class="swiper-slideText">
+                    <h2>Hashing Financial Freedom</h2>
+                    <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                <img src="css/imgs/IMG_4517.JPG" alt="" width="100px" height="100px">
+                <div class="swiper-slideText">
+                    <h2>Hashing Financial Freedom</h2>
+                    <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</div>
+                    </div>
+                 
+                    <div class="swiper-slide">
+                    <img src="css/imgs/IMG_4517.JPG" alt="" width="100px" height="100px">
+                    <div class="swiper-slideText">
+                    <h2>Hashing Financial Freedom</h2>
+                    <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</div>
+                    </div> 
+
+                     <div class="swiper-slide">
+                     <img src="css/imgs/IMG_4517.JPG" alt="" width="100px" height="100px">
+                     <div class="swiper-slideText">
+                     <h2>Hashing Financial Freedom</h2>
+                     <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</div>
+                    </div>
+          </section>
+            
+          
+          <section class="mobileApp">
+            <!-- <div class="phoneApp">
+                <img src="css/imgs/Mobile Banking App - Ashers Bank.png" alt="" width="225" height="450">
+            </div> -->
+            <div class="phoneFunction">
+                <h2>Our Mobile App - Ash'ed Up</h2>
+                <p class="phoneFunctionHeader">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus, delectus, maxime quas inventore iure, a odit quod perferendis qui architecto quaerat? Ratione earum velit voluptate eum vero quasi reiciendis.</p>
+                <ul>
+                    <li>Enjoy unlimited and secure bank transfer per day</li>
+                    <li>In-app notifications</li>
+                    <li>Instant bank notifications to stay up to date with latest features</li>
+                </ul>
+            </div>
+          </section>
+
+          <!-- <section class="slideContainer">
+            <div class="swiper-slide">
+                <img src="css/imgs/IMG_4516.JPG" alt="" width="45%" height="90%">
+                <div class="slideComponentText">
+                    <h2>Hashing Financial Freedom</h2>
+                    <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</div>
+            </div>
+
+            <div class="slideComponent">
+                <img src="css/imgs/IMG_4517.JPG" alt="" width="45%" height="90%">
+                <div class="slideComponentText">
+                    <h2>Hashing Financial Freedom</h2>
+                    <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</div>
+            </div>
+
+            <div class="slideComponent">
+                <img src="css/imgs/IMG_4517.JPG" alt="" width="45%" height="90%">
+                <div class="slideComponentText">
+                    <h2>Hashing Financial Freedom</h2>
+                    <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</div>
+          </section> -->
+
+        <!-- <section class="heroInverted">
+            <h2>Hashing Financial Freedom</h2>
+            <p>Our strength doesn't come from the success of ourself but rather the security and safety businesses like yours boost of. Insured by the NDIC, Asher's Bank is dedicated only to the guaranted safekeeping of funds ensured in our care by our users.</p>
+        </section> -->
+       
+
+        <!-- <section class="mainContent">
+            <div class="mainContent container">
+                <img src="css/imgs/IMG_4515.JPG" alt="" >
+                <a style="color: black; text-decoration: none;" href=""><h2>Sometimes, all you need is peace of mind!</h2>
+                <p>You don’t need to worry. Take a moment to unwind and relax, free from concerns about financial security. Let us handle the details while you focus on yourself. We can ensure your finances stay safe, so you can enjoy peace of mind. </p></a>
+            </div>
+            <div class="mainContent container">
+                <img src="css/imgs/IMG_4518.JPG" alt="" >
+                <a style="color: black; text-decoration: none;" href=""><h2>Move money from your phone!</h2>
+                <p>Experience the convenience of seamless, real-time payments at your fingertips with our cutting-edge mobile banking technology. You can now transfer money effortlessly from your phone to anywhere in the world. Whether you're sending funds to loved ones or managing business transactions, our secure and fast international transfer service ensures your money reaches its destination without delay. </p> </a>
+            </div>
+            <div class="mainContent container">
+                <img src="css/imgs/IMG_4520.JPG" alt="" >
+                <a style="color: black; text-decoration: none;" href=""><h2>Contactless Debit Cards are finally here!</h2>
+                <p> Experience faster, safer, and more convenient payments with our new contactless debit cards. Simply tap and go for secure transactions without entering your PIN for purchases under a certain limit. Enjoy seamless shopping, travel, and dining experiences, all with the same protection and benefits you trust from our banking services.</p></a>
+            </div>
+        </section>
+        <div class="dotCounter">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div> -->
     </main>
     <footer>
+        <section class="storeButtons">
+            <a class="storeButton" href="#">
+                <img alt="Apple logo" height="30" src="css/imgs/Apple Icon (2).png" width="30"/>
+                <div style="display: flex; flex-direction: column;">
+                    <span>Get it on</span>
+                    <span style="font-weight: bold;">App Store</span>
+                   </div>
+            </a>
 
+            <a class="storeButton" href="#">
+             <img alt="Google Play logo" height="30" src="css/imgs/Play Store Icon (2).png" width="30"/>
+             <div style="display: flex; flex-direction: column;">
+              <span>Get it on</span>
+              <span style="font-weight: bold;">Google Play</span>
+             </div>
+            </a>
+        </section>
+
+        <section class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    Products and services
+                    <svg class="arrowDown" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
+
+                    <svg class="arrowUp" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m280-400 200-200 200 200H280Z"/></svg>
+                </div>
+                <div class="accordion-content">
+                    <a href="#">Debit or Expense Card</a>
+                    <a href="#">Loans For Businesses</a>
+                    <a href="#">Insurance and Pensions</a>
+                    <a href="#">Mortgage</a>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    Help and security
+                    <svg class="arrowDown" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
+
+                    <svg class="arrowUp" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m280-400 200-200 200 200H280Z"/></svg>
+                </div>
+                <div class="accordion-content">
+                    <a href="#">Online Banking</a>
+                    <a href="#">Mobile Banking App</a>
+                    <a href="#">Whistelblowing</a>
+                    <a href="#">Report A Fraud</a>
+                    <a href="#">Ashers V/A</a>
+                    <a href="#">Find A Branch</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Express Yourself</a>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    Legal
+                    <svg class="arrowDown" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
+
+                    <svg class="arrowUp" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m280-400 200-200 200 200H280Z"/></svg>
+                </div>
+                <div class="accordion-content">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and conditions</a>
+                    <a href="#">Cookies Notice</a>
+                    <a href="#">Security And Analysis </a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                    About us
+                    <svg class="arrowDown" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-360 280-560h400L480-360Z"/></svg>
+
+                    <svg class="arrowUp" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m280-400 200-200 200 200H280Z"/></svg>
+                </div>
+                <div class="accordion-content">
+                    <a href="#">About Ashers Bank</a>
+                    <a href="#">GreyScale & Co. Group</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="connect">
+            <p style="font-family: 'Glacial Indifference', 'Times New Roman', Times, serif;  text-align: center; font-weight: 400; font-size: 0.90em; padding-bottom: 0.61em;">&copy; 2024 Ashers Bank</p>
+            <div class="socialMedia">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="28px" height="28px"><path d="M 11 4 C 7.1456661 4 4 7.1456661 4 11 L 4 39 C 4 42.854334 7.1456661 46 11 46 L 39 46 C 42.854334 46 46 42.854334 46 39 L 46 11 C 46 7.1456661 42.854334 4 39 4 L 11 4 z M 11 6 L 39 6 C 41.773666 6 44 8.2263339 44 11 L 44 39 C 44 41.773666 41.773666 44 39 44 L 11 44 C 8.2263339 44 6 41.773666 6 39 L 6 11 C 6 8.2263339 8.2263339 6 11 6 z M 13.085938 13 L 22.308594 26.103516 L 13 37 L 15.5 37 L 23.4375 27.707031 L 29.976562 37 L 37.914062 37 L 27.789062 22.613281 L 36 13 L 33.5 13 L 26.660156 21.009766 L 21.023438 13 L 13.085938 13 z M 16.914062 15 L 19.978516 15 L 34.085938 35 L 31.021484 35 L 16.914062 15 z"/></svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="28px" height="28px"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 25.832031 46 A 1.0001 1.0001 0 0 0 26.158203 46 L 31.832031 46 A 1.0001 1.0001 0 0 0 32.158203 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 33 44 L 33 30 L 36.820312 30 L 38.220703 23 L 33 23 L 33 21 C 33 20.442508 33.05305 20.398929 33.240234 20.277344 C 33.427419 20.155758 34.005822 20 35 20 L 38 20 L 38 14.369141 L 37.429688 14.097656 C 37.429688 14.097656 35.132647 13 32 13 C 29.75 13 27.901588 13.896453 26.71875 15.375 C 25.535912 16.853547 25 18.833333 25 21 L 25 23 L 22 23 L 22 30 L 25 30 L 25 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 32 15 C 34.079062 15 35.38736 15.458455 36 15.701172 L 36 18 L 35 18 C 33.849178 18 32.926956 18.0952 32.150391 18.599609 C 31.373826 19.104024 31 20.061492 31 21 L 31 25 L 35.779297 25 L 35.179688 28 L 31 28 L 31 44 L 27 44 L 27 28 L 24 28 L 24 25 L 27 25 L 27 21 C 27 19.166667 27.464088 17.646453 28.28125 16.625 C 29.098412 15.603547 30.25 15 32 15 z"/></svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" width="28px" height="28px"><path d="M 4.773438 1 C 2.695313 1 1 2.695313 1 4.773438 L 1 10.230469 C 1 12.304688 2.695313 14 4.773438 14 L 10.230469 14 C 12.304688 14 14 12.304688 14 10.226563 L 14 4.773438 C 14 2.695313 12.304688 1 10.226563 1 Z M 4.773438 2 L 10.226563 2 C 11.765625 2 13 3.234375 13 4.773438 L 13 10.226563 C 13 11.765625 11.765625 13 10.230469 13 L 4.773438 13 C 3.234375 13 2 11.765625 2 10.230469 L 2 4.773438 C 2 3.234375 3.234375 2 4.773438 2 Z M 11.5 3 C 11.222656 3 11 3.222656 11 3.5 C 11 3.777344 11.222656 4 11.5 4 C 11.777344 4 12 3.777344 12 3.5 C 12 3.222656 11.777344 3 11.5 3 Z M 7.5 4 C 5.574219 4 4 5.574219 4 7.5 C 4 9.425781 5.574219 11 7.5 11 C 9.425781 11 11 9.425781 11 7.5 C 11 5.574219 9.425781 4 7.5 4 Z M 7.5 5 C 8.886719 5 10 6.113281 10 7.5 C 10 8.886719 8.886719 10 7.5 10 C 6.113281 10 5 8.886719 5 7.5 C 5 6.113281 6.113281 5 7.5 5 Z"/></svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="28px" height="28px"><path d="M 9 4 C 6.2504839 4 4 6.2504839 4 9 L 4 41 C 4 43.749516 6.2504839 46 9 46 L 41 46 C 43.749516 46 46 43.749516 46 41 L 46 9 C 46 6.2504839 43.749516 4 41 4 L 9 4 z M 9 6 L 41 6 C 42.668484 6 44 7.3315161 44 9 L 44 41 C 44 42.668484 42.668484 44 41 44 L 9 44 C 7.3315161 44 6 42.668484 6 41 L 6 9 C 6 7.3315161 7.3315161 6 9 6 z M 14 11.011719 C 12.904779 11.011719 11.919219 11.339079 11.189453 11.953125 C 10.459687 12.567171 10.011719 13.484511 10.011719 14.466797 C 10.011719 16.333977 11.631285 17.789609 13.691406 17.933594 A 0.98809878 0.98809878 0 0 0 13.695312 17.935547 A 0.98809878 0.98809878 0 0 0 14 17.988281 C 16.27301 17.988281 17.988281 16.396083 17.988281 14.466797 A 0.98809878 0.98809878 0 0 0 17.986328 14.414062 C 17.884577 12.513831 16.190443 11.011719 14 11.011719 z M 14 12.988281 C 15.392231 12.988281 15.94197 13.610038 16.001953 14.492188 C 15.989803 15.348434 15.460091 16.011719 14 16.011719 C 12.614594 16.011719 11.988281 15.302225 11.988281 14.466797 C 11.988281 14.049083 12.140703 13.734298 12.460938 13.464844 C 12.78117 13.19539 13.295221 12.988281 14 12.988281 z M 11 19 A 1.0001 1.0001 0 0 0 10 20 L 10 39 A 1.0001 1.0001 0 0 0 11 40 L 17 40 A 1.0001 1.0001 0 0 0 18 39 L 18 33.134766 L 18 20 A 1.0001 1.0001 0 0 0 17 19 L 11 19 z M 20 19 A 1.0001 1.0001 0 0 0 19 20 L 19 39 A 1.0001 1.0001 0 0 0 20 40 L 26 40 A 1.0001 1.0001 0 0 0 27 39 L 27 29 C 27 28.170333 27.226394 27.345035 27.625 26.804688 C 28.023606 26.264339 28.526466 25.940057 29.482422 25.957031 C 30.468166 25.973981 30.989999 26.311669 31.384766 26.841797 C 31.779532 27.371924 32 28.166667 32 29 L 32 39 A 1.0001 1.0001 0 0 0 33 40 L 39 40 A 1.0001 1.0001 0 0 0 40 39 L 40 28.261719 C 40 25.300181 39.122788 22.95433 37.619141 21.367188 C 36.115493 19.780044 34.024172 19 31.8125 19 C 29.710483 19 28.110853 19.704889 27 20.423828 L 27 20 A 1.0001 1.0001 0 0 0 26 19 L 20 19 z M 12 21 L 16 21 L 16 33.134766 L 16 38 L 12 38 L 12 21 z M 21 21 L 25 21 L 25 22.560547 A 1.0001 1.0001 0 0 0 26.798828 23.162109 C 26.798828 23.162109 28.369194 21 31.8125 21 C 33.565828 21 35.069366 21.582581 36.167969 22.742188 C 37.266572 23.901794 38 25.688257 38 28.261719 L 38 38 L 34 38 L 34 29 C 34 27.833333 33.720468 26.627107 32.990234 25.646484 C 32.260001 24.665862 31.031834 23.983076 29.517578 23.957031 C 27.995534 23.930001 26.747519 24.626988 26.015625 25.619141 C 25.283731 26.611293 25 27.829667 25 29 L 25 38 L 21 38 L 21 21 z"/></svg>
+            </div>
+        </section>
+
+        <section class="license">
+            <span>Ashers Bank, Licensed By The Central Bank Of Nigeria</span>
+        </section>
+        
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="javascript/main.js"></script>
 </body>
 </html>
