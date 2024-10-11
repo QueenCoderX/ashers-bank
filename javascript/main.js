@@ -39,14 +39,43 @@ navItems.forEach (
 
 //MAIN SCRIPTS//
 
+const physicalSection = document.querySelector('.getStartedPhysical');
+const onlineSection = document.querySelector('.getStartedOnline');
+const physicalButton = document.querySelector('.physical-button');
+const onlineButton = document.querySelector('.online-button');
+
+physicalButton.addEventListener('click', () => {
+    physicalSection.classList.add('active');
+    physicalSection.classList.remove('inactive');
+    onlineSection.classList.add('inactive');
+    onlineSection.classList.remove('active');
+});
+
+onlineButton.addEventListener('click', () => {
+    onlineSection.classList.add('active');
+    onlineSection.classList.remove('inactive');
+    physicalSection.classList.add('inactive');
+    physicalSection.classList.remove('active');
+});
+
+
+//swiper mobile touch screen
 var swiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
   slidesPerView: 'auto',
   spaceBetween: 1,
+  loop: true,
   freeMode: true,
   touchEventsTarget: 'container',
-  width: 40,
-  margin: 5,
+  autoplay: {
+    delay:4000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  // width: 40,
+  // margin: 5,
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -58,6 +87,8 @@ var swiper = new Swiper('.swiper-container', {
     },
   }
 });
+
+swiper.update();
 
 //FOOTER SCRIPTS//
 function toggleAccordion(element) {
