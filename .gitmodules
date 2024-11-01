@@ -1,0 +1,3 @@
+[submodule "ashers-bank"]
+    path = ashers-bank
+    url = git@github.com:QueenCoderX/ashers-bank.git
